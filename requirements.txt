@@ -13,4 +13,4 @@ PyQt5
 amaze-benchmarker
 tensorflow
 pettingzoo[mpe]
-git+https://github.com/minerllabs/minerl
+#git+https://github.com/minerllabs/minerl
