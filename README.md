@@ -36,12 +36,14 @@ In this repository, each use-case described in our paper is a separate app, whic
 ## Development installation
 * We highly recommend to use a virtual environment such as Anaconda. This code has been tested on Python 3.10.
 * Git clone this repository
-* Install Redis server `apt install redis-server`
+* Install [Redis server](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/) `apt install redis-server` (on Ubuntu/Linux) or `brew install redis`
+* Start Redis
 * Install apps requirements (depending on what you what to try)
   * AMaze `pip install PyQt5 amaze-benchmarker`
   * Simple Spread and Simple Tag `pip install tensorflow pettingzoo[mpe]`
   * MineRL `pip install git+https://github.com/minerllabs/minerl`
 * Install SHARPIE requirements `pip install django channels[daphne] channels_redis django-crispy-forms crispy-bootstrap4 ezpickle opencv-python-headless`
+* Initialize the database by running the database migration: `python manage.py migrate`
 * Uncomment the apps you want to try in `sharpie/settings.py`, `sharpie/urls.py` and `sharpie/asgi.py`
 * Run `python manage.py runserver`
 

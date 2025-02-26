@@ -1,0 +1,16 @@
+# SHARPIE core
+django
+channels[daphne]
+channels_redis
+django-crispy-forms
+crispy-bootstrap4
+ezpickle
+opencv-python-headless
+
+# SHARPIE apps
+channels[daphne]
+PyQt5
+amaze-benchmarker
+tensorflow
+pettingzoo[mpe]
+git+https://github.com/minerllabs/minerl
